@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 9pt &quot;Gill Sans MT&quot;;
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabPosition">
+      <enum>QTabWidget::TabPosition::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::TabShape::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="insertTab">
+      <attribute name="title">
+       <string>图书新增</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_21">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="1,9">
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>编号</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bookidEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="1,9">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>书名</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="titleEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,9">
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>作者</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="authorEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="1,9">
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>类别</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="categoryEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="1,0,0">
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>状态</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="state_comboBox">
+             <item>
+              <property name="text">
+               <string>可借阅</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>借阅中</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="insertButton">
+         <property name="text">
+          <string>添加</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="selectTab">
+      <attribute name="title">
+       <string>图书删改</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,8">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>查询属性</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="attribute_comboBox">
+           <item>
+            <property name="text">
+             <string>编号</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>书名</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>作者</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>类别</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>状态</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,8,1">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>查询内容</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="searchEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="selectButton">
+           <property name="text">
+            <string>查询</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,9">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>查询结果</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="table">
+           <column>
+            <property name="text">
+             <string>编号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>书名</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>作者</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>类别</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>是否删除</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>选中修改</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>修改信息</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,1,8">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>修改属性</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="updateNewcomboBox">
+              <item>
+               <property name="text">
+                <string>编号</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>书名</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>作者</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>类别</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>状态</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,8,1">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>新内容</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="updateNewEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="updateNewButton">
+              <property name="text">
+               <string>确认修改</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

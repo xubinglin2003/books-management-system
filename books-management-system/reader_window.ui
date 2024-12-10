@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>766</width>
+    <height>385</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,8">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>当前账户：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="readerLabel">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>检索图书</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,8">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>查询属性</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>编号</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>书名</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>作者</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>类别</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>状态</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,8,1">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>查询内容</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="searchEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="selectButton">
+           <property name="text">
+            <string>查询</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,9">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>查询结果</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="table">
+           <column>
+            <property name="text">
+             <string>编号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>书名</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>作者</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>类别</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>是否借阅</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>个人中心</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1,1,2">
+         <item>
+          <widget class="QPushButton" name="borrowButton">
+           <property name="text">
+            <string>当前借阅</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="fineButton">
+           <property name="text">
+            <string>逾期罚款</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="historyButton">
+           <property name="text">
+            <string>借阅历史</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="fineLabel">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="table_2">
+         <column>
+          <property name="text">
+           <string>编号</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>书名</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>借阅日期</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>应还日期</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>状态</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="fineSumLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
