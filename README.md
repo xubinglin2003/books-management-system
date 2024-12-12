@@ -119,17 +119,17 @@ DELIMITER ;
 ### （1）用户登录界面（最初设想为霍格沃茨图书馆主题）
 ![image](https://github.com/user-attachments/assets/17d965bf-0cd8-4bb8-8a04-fb53f9110318)
 ### （2）读者检索、借阅图书界面
-以reader1账户登录，查询“类别”为“魔法学”的书籍。
-![image](https://github.com/user-attachments/assets/792310ce-af1d-4a1b-9ecd-f56292178cf3)
-点击“借阅”按钮，由于reader1的状态为“不可借阅”，消息框提示不可借阅图书。
-![image](https://github.com/user-attachments/assets/39014762-528e-4fdb-ae47-d643fe8083f0)
-以reader2账户登录，点击“借阅”按钮，可成功借阅《神奇的魁地奇球》。
+以reader1账户登录，查询“类别”为“魔法学”的书籍。  
+![image](https://github.com/user-attachments/assets/792310ce-af1d-4a1b-9ecd-f56292178cf3)  
+点击“借阅”按钮，由于reader1的状态为“不可借阅”，消息框提示不可借阅图书。  
+![image](https://github.com/user-attachments/assets/39014762-528e-4fdb-ae47-d643fe8083f0)  
+以reader2账户登录，点击“借阅”按钮，可成功借阅《神奇的魁地奇球》。  
 ![image](https://github.com/user-attachments/assets/e8484d7a-6211-49fc-bdab-43225d26912f)
 ### （3）读者个人中心界面
-以reader2账户登录，即可看到上文借阅的图书记录，以及借阅历史
-![image](https://github.com/user-attachments/assets/ca05b836-5cb3-4d01-a29e-77335955ac84)
-![image](https://github.com/user-attachments/assets/27c093d6-bc95-4562-97d3-2b8145177b36)
-以reader1账户登录，可查看已逾期图书及对应罚款金额
+以reader2账户登录，即可看到上文借阅的图书记录，以及借阅历史  
+![image](https://github.com/user-attachments/assets/ca05b836-5cb3-4d01-a29e-77335955ac84)  
+![image](https://github.com/user-attachments/assets/27c093d6-bc95-4562-97d3-2b8145177b36)  
+以reader1账户登录，可查看已逾期图书及对应罚款金额  
 ![image](https://github.com/user-attachments/assets/933b5f8d-adfe-45e8-96e2-96601e7ffd2c)
 ### （4）图书管理员图书添加界面
 以librarian账户登录，输入新增图书信息，添加成功
