@@ -1,2 +1,9 @@
-# books-management-system
-PySide6+Mysql，本科数据库系统的课程设计作业，Course Design Assignment for Undergraduate Database Systems
+# 基于Pyside6+Pymysql的图书管理系统
+## 1. **系统功能需求**
+设计一个简单的图书系统，拥有用户登录界面、管理员Librarian界面和读者Reader界面。
+读者可进行图书的查询和借阅，能够查看自己当前借阅的图书、是否有逾期未还的图书以及借阅历史，若读者有逾期未还的图书，则不可借阅新书。
+管理员可进行图书的入库、出库、查询和修改。
+
+## 2. **数据库设计**
+### (1) ER图设计
+![wps1](https://github.com/user-attachments/assets/f456dd8d-6b8a-43dd-901b-4911ed754ad1)
